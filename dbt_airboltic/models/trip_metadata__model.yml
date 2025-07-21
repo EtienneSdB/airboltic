@@ -1,0 +1,5 @@
+models:
+  - name: trip_metadata
+    description: "Gathering data about the trip, the related order, and the related plane."
+    materialized: view
+

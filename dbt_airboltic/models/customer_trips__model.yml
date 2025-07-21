@@ -1,0 +1,5 @@
+models:
+  - name: customer_trips
+    description: "Linking the customer to the trip, and filtering out the unfinished trips."
+    materialized: view
+

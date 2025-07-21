@@ -1,0 +1,5 @@
+models:
+  - name: weekly_active_customers
+    description: "Number of active customers per week."
+    materialized: view
+

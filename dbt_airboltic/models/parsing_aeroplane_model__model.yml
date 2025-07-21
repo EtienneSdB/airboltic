@@ -1,0 +1,26 @@
+models:
+  - name: parsing_aeroplane_model
+    description: "Parsing the seed_aeroplane_model into a line per aircraft."
+    materialized: table
+    columns:
+      - name: model
+        description: "Name and unique identifier for each aircraft."
+        data_type: text
+        data_tests:
+          - unique
+          - not_null
+      - name: manufacturer
+        description: "Name of the manufacturer."
+        data_type: text
+      - name: max_seats
+        description: "Maximum number of seats."
+        data_type: int
+      - name: max_weight
+        description: "Maximum weight."
+        data_type: int
+      - name: max_distance
+        description: "Maximum distance covered."
+        data_type: int
+      - name: engine_type
+        description: "Type of engine."
+        data_type: text

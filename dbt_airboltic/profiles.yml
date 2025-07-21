@@ -1,0 +1,12 @@
+dbt_airboltic:
+  target: etienne
+  outputs:
+    etienne:
+      type: postgres
+      host: localhost
+      user: etienne
+      password: secret
+      port: 5432
+      dbname: airboltic_db
+      schema: airboltic
+      threads: 4
